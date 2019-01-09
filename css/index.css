@@ -2,7 +2,6 @@ html, body {
     height: 100%;
     /*overflow: hidden;*/
 }
-
 html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0px;
     padding: 0px;
@@ -13,7 +12,6 @@ a {
     text-decoration: none;
     display: block;
 }
-
 li {
     list-style: none;
 }
@@ -31,7 +29,6 @@ img {
     display: block;
     clear: both;
 }
-
 .conten-titile {
     color: #009ee0;
     font-size: 80px;
@@ -42,44 +39,36 @@ img {
 #wrap {
     width: 100%;
     height: 100%;
-    background: blue;
+    background: pink;
 }
-
 #header {
     position: relative;
     height: 80px;
 }
-
 .headerMain {
-    height: 80px;
-    width: 1100px;
-    background: pink;
-    margin: 0 auto;
-}
-
+     width: 1100px;
+     height: 80px;
+     margin: 0 auto;
+ }
 .logo {
     float: left;
     margin-top: 15px;
 }
-
 .music {
     float: left;
     margin-top: 50px;
 }
-
 .nav {
     float: right;
     margin-top: 50px;
 }
-
 .nav li {
-    position: relative;
     float: left;
     margin-left: 40px;
     cursor: pointer;
+    position: relative;
 }
-
-.nav li .down {
+.nav li .up{
     position: absolute;
     top: 0;
     left: 0;
@@ -88,14 +77,14 @@ img {
     transition: width 1s;
 }
 
-.nav li:hover .down {
+.nav li:hover .up {
     width: 100%;
 }
 
-.nav li .up {
+.nav li .down{
+    width: 100%;
     color: #009EE0;
 }
-
 .arrow {
     position: absolute;
     left: 50%;
@@ -105,28 +94,29 @@ img {
     height: 11px;
     background-image: url("../img/arrow.png");
     background-repeat: no-repeat;
-    z-index: 100;
+    z-index: 10;
 }
-
 #content {
     position: absolute;
     top: 80px;
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-.list {
-    height: 500%;
-}
-
-.list > li {
-    height: 20%;
-    position: relative;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
-
+.list {
+    width: 100%;
+    height:500%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.list > li {
+    position: relative;
+    height:20%;
+    background-repeat: no-repeat;
+    background: peachpuff;
+}
 .list > li section {
     width: 1100px;
     height: 550px;
@@ -136,6 +126,7 @@ img {
     bottom: 0;
     right: 0;
     margin: auto;
+    background: red;
 }
 
 .list > li:nth-child(1) {
